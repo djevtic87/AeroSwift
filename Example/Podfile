@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AeroSwift_Example' do
+  pod 'AeroSwift', :path => '../'
+
+  target 'AeroSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
