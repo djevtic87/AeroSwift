@@ -1,0 +1,6 @@
+framework module Pods_AeroSwift_Example {
+  umbrella header "Pods-AeroSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

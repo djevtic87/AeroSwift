@@ -1,0 +1,16 @@
+PODS:
+  - AeroSwift (0.1.0)
+
+DEPENDENCIES:
+  - AeroSwift (from `../`)
+
+EXTERNAL SOURCES:
+  AeroSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AeroSwift: ff963e7503c39d024d2d9e96352164400adc3b50
+
+PODFILE CHECKSUM: e8f995c1228b2f5c9ba5976e709f0aefee7008f7
+
+COCOAPODS: 1.4.0

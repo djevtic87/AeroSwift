@@ -1,0 +1,22 @@
+{
+  "name": "AeroSwift",
+  "version": "0.1.0",
+  "summary": "A short description of AeroSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Dejan Jevtic/AeroSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dejan Jevtic": "dejanjevtic87@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Dejan Jevtic/AeroSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AeroSwift/Classes/**/*"
+}

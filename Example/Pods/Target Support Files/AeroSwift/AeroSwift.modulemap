@@ -1,0 +1,6 @@
+framework module AeroSwift {
+  umbrella header "AeroSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
