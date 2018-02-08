@@ -9,7 +9,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AeroSwift'
   s.version          = '0.1.0'
-  s.swift_version    = '4.0'
   s.summary          = 'Boilerplate code for kickstarting iOS apps.'
 
 # This description is used to generate tags and improve search results.
