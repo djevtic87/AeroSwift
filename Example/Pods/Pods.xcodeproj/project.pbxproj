@@ -132,7 +132,7 @@
 		70B27CA03CA3797D3E8948EF2BD28110 /* AeroSwift */ = {
 			isa = PBXGroup;
 			children = (
-				77B230B1202B306700392970 /* Extensions */,
+				D6C7FC8E202CD854003B6FD4 /* Classes */,
 				2232675995F67F4B985379871D11D48B /* Pod */,
 				8E6F11897CE1DE98D891C9BE276ED61E /* Support Files */,
 			);
@@ -235,6 +235,15 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		D6C7FC8E202CD854003B6FD4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77B230B1202B306700392970 /* Extensions */,
+			);
+			name = Classes;
+			path = AeroSwift/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

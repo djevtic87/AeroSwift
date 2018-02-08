@@ -30,7 +30,7 @@ Boilerplate code for kickstarting iOS apps. Install library into project, never 
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AeroSwift/Classes/**/*'
+  s.source_files = 'AeroSwift/Classes/Extensions/*.swift'
   
   # s.resource_bundles = {
   #   'AeroSwift' => ['AeroSwift/Assets/*.png']
