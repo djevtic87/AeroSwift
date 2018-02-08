@@ -33,7 +33,7 @@ extension UIView {
     }
     
     // Get the parent view controller of any UIView.
-    var parentViewController: UIViewController? {
+    public var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = self
         while parentResponder != nil {
             parentResponder = parentResponder!.next

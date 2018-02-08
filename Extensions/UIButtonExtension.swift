@@ -10,7 +10,7 @@ import Foundation
 extension UIButton {
     
     // Align UIButton image and title vertically.
-    func alignImageAndTitleVertically(padding: CGFloat = 4.0) {
+    public func alignImageAndTitleVertically(padding: CGFloat = 4.0) {
         let imageSize = self.imageView!.frame.size
         let titleSize = self.titleLabel!.frame.size
         let totalHeight = imageSize.height + titleSize.height + padding
