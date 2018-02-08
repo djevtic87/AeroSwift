@@ -12,6 +12,8 @@
 		3A5241EA158090378751076A227DB919 /* AeroSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD54651F450C71B7DEEB59E500B77F1 /* AeroSwift-dummy.m */; };
 		44369A76AFECB8F70579555E813B92D4 /* Pods-AeroSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A65CD8F5BA1F56F46199BB1874747E /* Pods-AeroSwift_Example-dummy.m */; };
 		5F853D1645D5868EE176B1E5D5F73EB1 /* Pods-AeroSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E23E2E1906647EBBA5F4FCD479787 /* Pods-AeroSwift_Tests-dummy.m */; };
+		776C8AE2202C9EAE0032FC3E /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C8AE1202C9EAE0032FC3E /* DispatchQueueExtension.swift */; };
+		776C8AE4202CA23B0032FC3E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C8AE3202CA23B0032FC3E /* UIButtonExtension.swift */; };
 		77B230B3202B308B00392970 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230B2202B308B00392970 /* UIViewExtension.swift */; };
 		77B230BE202B43CC00392970 /* DecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230BD202B43CC00392970 /* DecoderExtension.swift */; };
 		AE0712508B9A1E96431B3D4C4432C674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -46,6 +48,8 @@
 		650A7CD6BDBF03C2B14E52880443F203 /* AeroSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AeroSwift.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6D982CA9345199D519880D7333E786F7 /* Pods-AeroSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		776C8AE1202C9EAE0032FC3E /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		776C8AE3202CA23B0032FC3E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		77B230B2202B308B00392970 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		77B230BD202B43CC00392970 /* DecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderExtension.swift; sourceTree = "<group>"; };
 		8674C5BBB16D45C32A116FAB5F9BCF9B /* Pods_AeroSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AeroSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 			children = (
 				77B230B2202B308B00392970 /* UIViewExtension.swift */,
 				77B230BD202B43CC00392970 /* DecoderExtension.swift */,
+				776C8AE1202C9EAE0032FC3E /* DispatchQueueExtension.swift */,
+				776C8AE3202CA23B0032FC3E /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B230BE202B43CC00392970 /* DecoderExtension.swift in Sources */,
+				776C8AE4202CA23B0032FC3E /* UIButtonExtension.swift in Sources */,
+				776C8AE2202C9EAE0032FC3E /* DispatchQueueExtension.swift in Sources */,
 				77B230B3202B308B00392970 /* UIViewExtension.swift in Sources */,
 				3A5241EA158090378751076A227DB919 /* AeroSwift-dummy.m in Sources */,
 			);
