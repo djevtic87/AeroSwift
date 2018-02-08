@@ -13,6 +13,7 @@
 		44369A76AFECB8F70579555E813B92D4 /* Pods-AeroSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A65CD8F5BA1F56F46199BB1874747E /* Pods-AeroSwift_Example-dummy.m */; };
 		5F853D1645D5868EE176B1E5D5F73EB1 /* Pods-AeroSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E23E2E1906647EBBA5F4FCD479787 /* Pods-AeroSwift_Tests-dummy.m */; };
 		77B230B3202B308B00392970 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230B2202B308B00392970 /* UIViewExtension.swift */; };
+		77B230BE202B43CC00392970 /* DecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230BD202B43CC00392970 /* DecoderExtension.swift */; };
 		AE0712508B9A1E96431B3D4C4432C674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AF272DA843302DBD96A34FF2A65D4A21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C2DF8FDCFB1F3AD1AA8722A5D6722950 /* Pods-AeroSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4999D07F7416E891ADE312A79607C6 /* Pods-AeroSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6D982CA9345199D519880D7333E786F7 /* Pods-AeroSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		77B230B2202B308B00392970 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		77B230BD202B43CC00392970 /* DecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderExtension.swift; sourceTree = "<group>"; };
 		8674C5BBB16D45C32A116FAB5F9BCF9B /* Pods_AeroSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AeroSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DE67A975A8E3C1C540AC5404505098 /* Pods-AeroSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		90AD1074D91FC138D69B5FA14F709630 /* AeroSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				77B230B2202B308B00392970 /* UIViewExtension.swift */,
+				77B230BD202B43CC00392970 /* DecoderExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B230BE202B43CC00392970 /* DecoderExtension.swift in Sources */,
 				77B230B3202B308B00392970 /* UIViewExtension.swift in Sources */,
 				3A5241EA158090378751076A227DB919 /* AeroSwift-dummy.m in Sources */,
 			);

@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		77B230BA202B345300392970 /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230B9202B345300392970 /* RotateViewController.swift */; };
+		77B230C0202B464300392970 /* DecodeItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230BF202B464300392970 /* DecodeItemViewController.swift */; };
 		81AA02152736394E1E57C7AA /* Pods_AeroSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF71A87F39F5EACB5AA018 /* Pods_AeroSwift_Tests.framework */; };
 		8402F87AEF0B96C48C7ED837 /* Pods_AeroSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F32E95C8C772531044ADAA /* Pods_AeroSwift_Example.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6DBD092A7AE0597C34BEAC93 /* AeroSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AeroSwift.podspec; path = ../AeroSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		77B230B9202B345300392970 /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
+		77B230BF202B464300392970 /* DecodeItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeItemViewController.swift; sourceTree = "<group>"; };
 		821E29BD7852EDE3FDE28FA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9D1EA24D4BF0DD4B47FDD2C6 /* Pods-AeroSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeroSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AeroSwift_Example/Pods-AeroSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2D92CE0FBAAA94A69FDBC8 /* Pods-AeroSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeroSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AeroSwift_Tests/Pods-AeroSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				77B230B9202B345300392970 /* RotateViewController.swift */,
+				77B230BF202B464300392970 /* DecodeItemViewController.swift */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				77B230BA202B345300392970 /* RotateViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				77B230C0202B464300392970 /* DecodeItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

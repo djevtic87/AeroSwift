@@ -23,10 +23,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCh-gI-dto">
                                 <rect key="frame" x="133" y="318" width="108" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2qn-3K-UoB"/>
-                                    <constraint firstAttribute="width" constant="108" id="nBj-Mp-fxa"/>
-                                </constraints>
                                 <state key="normal" title="Show Examples"/>
                                 <connections>
                                     <segue destination="AfD-34-rcq" kind="show" id="9Mz-xL-v8X"/>
@@ -74,6 +70,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="fCW-5l-PGo" kind="show" id="YbI-PH-tV5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Rgr-ah-gu0" style="IBUITableViewCellStyleDefault" id="pRP-em-IWh">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pRP-em-IWh" id="9Cf-KW-AsT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="decodeItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rgr-ah-gu0">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fKb-GC-dCs" kind="show" id="XnH-EN-Z80"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -131,6 +147,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYI-eV-ybL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029.5999999999999" y="-357.57121439280365"/>
+        </scene>
+        <!--Decode Item View Controller-->
+        <scene sceneID="z2V-iB-5Me">
+            <objects>
+                <viewController id="fKb-GC-dCs" customClass="DecodeItemViewController" customModule="AeroSwift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wHr-wf-mLy"/>
+                        <viewControllerLayoutGuide type="bottom" id="cgm-dF-Hxj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kjC-Sf-o3h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEN-TS-diW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sev-gt-mDK">
+                                <rect key="frame" x="160" y="318" width="54" height="30"/>
+                                <state key="normal" title="Decode"/>
+                                <connections>
+                                    <action selector="decodeButtonPressed:" destination="fKb-GC-dCs" eventType="touchUpInside" id="R1h-WF-cXN"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-fV-Qda">
+                                <rect key="frame" x="0.0" y="356" width="375" height="311"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pjp-fV-Qda" secondAttribute="trailing" id="1ai-AS-8o4"/>
+                            <constraint firstItem="uEN-TS-diW" firstAttribute="leading" secondItem="kjC-Sf-o3h" secondAttribute="leading" id="6JZ-fG-Dts"/>
+                            <constraint firstItem="uEN-TS-diW" firstAttribute="top" secondItem="wHr-wf-mLy" secondAttribute="bottom" id="L2T-rE-Ab0"/>
+                            <constraint firstItem="sev-gt-mDK" firstAttribute="top" secondItem="uEN-TS-diW" secondAttribute="bottom" constant="8" id="MHT-cs-af3"/>
+                            <constraint firstItem="Pjp-fV-Qda" firstAttribute="top" secondItem="sev-gt-mDK" secondAttribute="bottom" constant="8" id="YbD-Du-vBg"/>
+                            <constraint firstItem="sev-gt-mDK" firstAttribute="centerY" secondItem="kjC-Sf-o3h" secondAttribute="centerY" id="cBK-FM-pi3"/>
+                            <constraint firstItem="Pjp-fV-Qda" firstAttribute="leading" secondItem="kjC-Sf-o3h" secondAttribute="leading" id="dnv-2t-wfB"/>
+                            <constraint firstItem="cgm-dF-Hxj" firstAttribute="top" secondItem="Pjp-fV-Qda" secondAttribute="bottom" id="kcL-e5-Uxo"/>
+                            <constraint firstItem="sev-gt-mDK" firstAttribute="centerX" secondItem="kjC-Sf-o3h" secondAttribute="centerX" id="pnA-EU-Ls8"/>
+                            <constraint firstAttribute="trailing" secondItem="uEN-TS-diW" secondAttribute="trailing" id="vS4-wC-TUN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="uEN-TS-diW" id="6hJ-QO-Zt3"/>
+                        <outlet property="textView2" destination="Pjp-fV-Qda" id="G7L-oc-5Bx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbO-yX-NYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029.5999999999999" y="303.59820089955025"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vLM-xv-iys">
