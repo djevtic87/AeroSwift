@@ -1,6 +1,6 @@
 # AeroSwift
 
-[![CI Status](http://img.shields.io/travis/Dejan Jevtic/AeroSwift.svg?style=flat)](https://travis-ci.org/Dejan Jevtic/AeroSwift)
+[![CI Status](http://img.shields.io/travis/djevtic87/AeroSwift.svg?style=flat)](https://travis-ci.org/djevtic87/AeroSwift)
 [![Version](https://img.shields.io/cocoapods/v/AeroSwift.svg?style=flat)](http://cocoapods.org/pods/AeroSwift)
 [![License](https://img.shields.io/cocoapods/l/AeroSwift.svg?style=flat)](http://cocoapods.org/pods/AeroSwift)
 [![Platform](https://img.shields.io/cocoapods/p/AeroSwift.svg?style=flat)](http://cocoapods.org/pods/AeroSwift)
