@@ -43,5 +43,15 @@ extension UIView {
         }
         return nil
     }
+    
+    // Get superview of specific type.
+    public func superview<T>(of type: T.Type) -> T? {
+        return superview as? T ?? superview.flatMap { $0.superview(of: type) }
+    }
+    
+    // Get subview of specific type.
+    public func subview<T>(of type: T.Type) -> T? {
+        return subviews.flatMap { $0 as? T ?? $0.subview(of: type) }.first
+    }
 }
 
