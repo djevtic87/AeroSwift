@@ -12,6 +12,7 @@ class DynamicLabelHeightViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label1: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class DynamicLabelHeightViewController: UIViewController {
     }
 
     @IBAction func showButtonPressed(_ sender: Any) {
-        self.label.setTextAndAdjustHeight(self.textField.text)
+        UIView.animate(withDuration: 0.3, animations: {
+            self.label.setTextAndAdjustHeight(self.textField.text)
+            self.label1.setTextAndAdjustHeight(self.textField.text)
+        })
     }
 }

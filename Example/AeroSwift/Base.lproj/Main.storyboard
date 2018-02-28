@@ -158,9 +158,25 @@
                                     <action selector="showButtonPressed:" destination="Ckh-ny-BeX" eventType="touchUpInside" id="hqB-UX-wO3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOE-Z5-jsh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOE-Z5-jsh">
                                 <rect key="frame" x="16" y="148" width="343" height="0.0"/>
                                 <color key="backgroundColor" red="1" green="0.9481443007" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6Z-VZ-bJS">
+                                <rect key="frame" x="16" y="156" width="343" height="0.0"/>
+                                <color key="backgroundColor" red="1" green="0.9481443007" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiV-DV-vrc">
+                                <rect key="frame" x="16" y="164" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kwK-bE-9bH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -169,17 +185,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DPg-TW-Tth" firstAttribute="leading" secondItem="zI4-Im-aAw" secondAttribute="leadingMargin" id="2ON-Ly-vV4"/>
+                            <constraint firstItem="YiV-DV-vrc" firstAttribute="top" secondItem="v6Z-VZ-bJS" secondAttribute="bottom" constant="8" id="ByS-IU-2Pu"/>
                             <constraint firstItem="oFr-FA-u56" firstAttribute="centerX" secondItem="zI4-Im-aAw" secondAttribute="centerX" id="CJa-bm-Yv0"/>
                             <constraint firstItem="DPg-TW-Tth" firstAttribute="trailing" secondItem="zI4-Im-aAw" secondAttribute="trailingMargin" id="N9z-4s-46j"/>
+                            <constraint firstItem="YiV-DV-vrc" firstAttribute="trailing" secondItem="zI4-Im-aAw" secondAttribute="trailingMargin" id="NIr-sY-vPd"/>
                             <constraint firstItem="dOE-Z5-jsh" firstAttribute="trailing" secondItem="zI4-Im-aAw" secondAttribute="trailingMargin" id="STi-N1-Kcq"/>
                             <constraint firstItem="oFr-FA-u56" firstAttribute="top" secondItem="DPg-TW-Tth" secondAttribute="bottom" constant="8" id="VRG-37-218"/>
                             <constraint firstItem="DPg-TW-Tth" firstAttribute="top" secondItem="Npa-lt-qDb" secondAttribute="bottom" constant="8" id="Xf2-La-OP3"/>
                             <constraint firstItem="dOE-Z5-jsh" firstAttribute="leading" secondItem="zI4-Im-aAw" secondAttribute="leadingMargin" id="Z5q-uj-ihb"/>
                             <constraint firstItem="dOE-Z5-jsh" firstAttribute="top" secondItem="oFr-FA-u56" secondAttribute="bottom" constant="8" id="bJH-Oo-R6G"/>
+                            <constraint firstItem="YiV-DV-vrc" firstAttribute="leading" secondItem="zI4-Im-aAw" secondAttribute="leadingMargin" id="lhF-7F-9u1"/>
+                            <constraint firstItem="v6Z-VZ-bJS" firstAttribute="trailing" secondItem="zI4-Im-aAw" secondAttribute="trailingMargin" id="o6t-I7-S1n"/>
+                            <constraint firstItem="v6Z-VZ-bJS" firstAttribute="top" secondItem="dOE-Z5-jsh" secondAttribute="bottom" constant="8" id="pNN-sR-VjM"/>
+                            <constraint firstItem="v6Z-VZ-bJS" firstAttribute="leading" secondItem="zI4-Im-aAw" secondAttribute="leadingMargin" id="pae-P0-ql7"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="dOE-Z5-jsh" id="6XI-cg-M5c"/>
+                        <outlet property="label1" destination="v6Z-VZ-bJS" id="0EP-lY-Tch"/>
                         <outlet property="textField" destination="DPg-TW-Tth" id="7Fd-Me-rLo"/>
                     </connections>
                 </viewController>
