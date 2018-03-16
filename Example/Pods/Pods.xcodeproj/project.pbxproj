@@ -14,6 +14,7 @@
 		5F853D1645D5868EE176B1E5D5F73EB1 /* Pods-AeroSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E23E2E1906647EBBA5F4FCD479787 /* Pods-AeroSwift_Tests-dummy.m */; };
 		776C8AE2202C9EAE0032FC3E /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C8AE1202C9EAE0032FC3E /* DispatchQueueExtension.swift */; };
 		776C8AE4202CA23B0032FC3E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C8AE3202CA23B0032FC3E /* UIButtonExtension.swift */; };
+		7793841B205BDB160029ECD1 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7793841A205BDB160029ECD1 /* UIApplicationExtension.swift */; };
 		77B230B3202B308B00392970 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230B2202B308B00392970 /* UIViewExtension.swift */; };
 		77B230BE202B43CC00392970 /* DecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B230BD202B43CC00392970 /* DecoderExtension.swift */; };
 		77ED04C02046A32D00B95E23 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED04BF2046A32D00B95E23 /* UILabelExtension.swift */; };
@@ -51,6 +52,7 @@
 		6D982CA9345199D519880D7333E786F7 /* Pods-AeroSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		776C8AE1202C9EAE0032FC3E /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		776C8AE3202CA23B0032FC3E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		7793841A205BDB160029ECD1 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		77B230B2202B308B00392970 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		77B230BD202B43CC00392970 /* DecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderExtension.swift; sourceTree = "<group>"; };
 		77ED04BF2046A32D00B95E23 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				776C8AE1202C9EAE0032FC3E /* DispatchQueueExtension.swift */,
 				776C8AE3202CA23B0032FC3E /* UIButtonExtension.swift */,
 				77ED04BF2046A32D00B95E23 /* UILabelExtension.swift */,
+				7793841A205BDB160029ECD1 /* UIApplicationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				776C8AE2202C9EAE0032FC3E /* DispatchQueueExtension.swift in Sources */,
 				77B230B3202B308B00392970 /* UIViewExtension.swift in Sources */,
 				77ED04C02046A32D00B95E23 /* UILabelExtension.swift in Sources */,
+				7793841B205BDB160029ECD1 /* UIApplicationExtension.swift in Sources */,
 				3A5241EA158090378751076A227DB919 /* AeroSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
