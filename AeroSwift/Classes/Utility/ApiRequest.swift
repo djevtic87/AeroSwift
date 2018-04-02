@@ -31,7 +31,7 @@ public class ApiRequest: NSObject {
                                       _ responseType: T.Type,
                                       _ bodyParams: [String: Any]?,
                                       _ headerFields: [String: String]?,
-                                      _ completion: @escaping ((T?) -> ())) {
+                                      _ completion: @escaping ((T?, Error?) -> ())) {
         
         var urlRequest = URLRequest(url: URL(string: url)!)
         urlRequest.httpMethod = httpMethod
@@ -86,18 +86,23 @@ public class ApiRequest: NSObject {
                     print("*********")
                 }
                 
-                if let data = response.data, response.error == nil {
+                if let e = response.error {
+                    completion(nil, e)
+                    return
+                }
+                
+                if let data = response.data {
                     if responseType == String.self {
-                        completion(String(data: data, encoding: .utf8) as? T)
+                        completion(String(data: data, encoding: .utf8) as? T, nil)
                     } else if responseType == Data.self {
-                        completion(data as? T)
+                        completion(data as? T, nil)
                     } else {
                         print("Error unknown response type.")
-                        completion(nil)
+                        completion(nil, nil)
                     }
                 } else {
                     print("Error parsing response data.")
-                    completion(nil)
+                    completion(nil, nil)
                 }
             }
         } else {
@@ -120,13 +125,18 @@ public class ApiRequest: NSObject {
                     print("*********")
                 }
                 
-                if let data = response.data, response.error == nil {
+                if let e = response.error {
+                    completion(nil, e)
+                    return
+                }
+                
+                if let data = response.data {
                     do {
                         let resp = try JSONDecoder().decode(responseType, from: data)
-                        completion(resp)
+                        completion(resp, nil)
                     } catch {
                         print(error)
-                        completion(nil)
+                        completion(nil, nil)
                     }
                 }
             }
