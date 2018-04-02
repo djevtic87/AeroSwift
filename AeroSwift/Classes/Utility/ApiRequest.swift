@@ -113,20 +113,19 @@ public class ApiRequest: NSObject {
                         print("- request: ", req)
                     }
                     
+                    if let statusCode = response.response?.statusCode {
+                        print("- status code: ", statusCode)
+                    }
+                    
                     if let value = response.value {
                         print("- value:   ", value)
                     }
-                    
+
                     if let error = response.error {
                         print("- error:   ", error.localizedDescription)
                     }
                     
                     print("*********")
-                }
-                
-                if let e = response.error {
-                    completion(nil, response.response?.statusCode)
-                    return
                 }
                 
                 if let data = response.data {
@@ -137,6 +136,8 @@ public class ApiRequest: NSObject {
                         print(error)
                         completion(nil, response.response?.statusCode)
                     }
+                } else {
+                    completion(nil, response.response?.statusCode)
                 }
             }
         }
