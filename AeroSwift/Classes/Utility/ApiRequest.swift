@@ -77,7 +77,7 @@ public class ApiRequest: NSObject {
                     }
                     
                     if let statusCode = response.response?.statusCode {
-                        print("- status code: ", value)
+                        print("- status code: ", statusCode)
                     }
 
                     if let data = response.data, let value = String(data: data, encoding: .utf8) {
