@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AeroSwift'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Boilerplate code for kickstarting iOS apps.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Boilerplate code for kickstarting iOS apps. Install library into project, never 
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AeroSwift/Classes/Extensions/*.swift'
+  s.source_files = 'AeroSwift/Classes/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'AeroSwift' => ['AeroSwift/Assets/*.png']
@@ -38,6 +38,7 @@ Boilerplate code for kickstarting iOS apps. Install library into project, never 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
+  s.dependency 'Alamofire', '~> 4.7'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

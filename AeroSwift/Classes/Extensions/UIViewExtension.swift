@@ -51,7 +51,7 @@ extension UIView {
     
     // Get subview of specific type.
     public func subview<T>(of type: T.Type) -> T? {
-        return subviews.flatMap { $0 as? T ?? $0.subview(of: type) }.first
+        return subviews.compactMap { $0 as? T ?? $0.subview(of: type) }.first
     }
 }
 

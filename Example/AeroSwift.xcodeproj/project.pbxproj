@@ -319,10 +319,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AeroSwift_Example/Pods-AeroSwift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AeroSwift/AeroSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AeroSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

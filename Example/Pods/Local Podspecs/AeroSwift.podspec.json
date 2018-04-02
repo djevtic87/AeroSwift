@@ -1,9 +1,9 @@
 {
   "name": "AeroSwift",
-  "version": "0.1.0",
-  "summary": "A short description of AeroSwift.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Dejan Jevtic/AeroSwift",
+  "version": "0.1.3",
+  "summary": "Boilerplate code for kickstarting iOS apps.",
+  "description": "Boilerplate code for kickstarting iOS apps. Install library into project, never have to write this generic code again.",
+  "homepage": "https://github.com/djevtic87/AeroSwift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,17 @@
     "Dejan Jevtic": "dejanjevtic87@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Dejan Jevtic/AeroSwift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/djevtic87/AeroSwift.git",
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "AeroSwift/Classes/**/*"
+  "source_files": "AeroSwift/Classes/**/*.{h,m,swift}",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.7"
+    ]
+  }
 }
