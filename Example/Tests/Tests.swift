@@ -53,4 +53,22 @@ class Tests: XCTestCase {
         })
         waitForExpectations(timeout: 10.0, handler: nil)
     }
+    
+    func testAPIRequestString() {
+        let e = expectation(description: "ApiRequest")
+        
+        let url = "http://www.mocky.io/v2/5ac6173b4a00004e007e062f"
+        
+        let headers = ["Content-Type" : "application/json"]
+        
+        ApiRequest.sharedInstance.request(url, "GET", nil, headers, {(data, status) in
+            if let data = data, let string = String(data: data, encoding: .utf8), status == 200 {
+                XCTAssert(string.count == 458)
+            } else {
+                XCTAssert(false)
+            }
+            e.fulfill()
+        })
+        waitForExpectations(timeout: 10.0, handler: nil)
+    }
 }
