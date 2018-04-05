@@ -52,42 +52,13 @@ public class ApiRequest: NSObject {
         }
         
         if ApiRequest.LOG_REQUEST {
-            print("REQUEST\r\n*********")
-            print("- url:    ", urlRequest)
-            if let method = urlRequest.httpMethod {
-                print("- method: ", method)
-            }
-            
-            if let headers = urlRequest.allHTTPHeaderFields {
-                print("- header: ", headers)
-            }
-            
-            if let body = bodyParams {
-                print("- body:   ", body)
-            }
-            print("*********")
+            print(urlRequest.toString())
         }
         
         if responseType == String.self || responseType == Data.self {
             Alamofire.request(urlRequest).validate(statusCode: 200..<300).response { response in
                 if ApiRequest.LOG_RESPONSE {
-                    print("RESPONSE\r\n*********")
-                    if let req = response.request {
-                        print("- request: ", req)
-                    }
-                    
-                    if let statusCode = response.response?.statusCode {
-                        print("- status code: ", statusCode)
-                    }
-
-                    if let data = response.data, let value = String(data: data, encoding: .utf8) {
-                        print("- value: ", value)
-                    }
-                    
-                    if let error = response.error {
-                        print("- error:   ", error.localizedDescription)
-                    }
-                    print("*********")
+                    print(response.toString())
                 }
                 
                 if let data = response.data {
@@ -107,25 +78,7 @@ public class ApiRequest: NSObject {
         } else {
             Alamofire.request(urlRequest).validate().responseJSON { (response) in
                 if ApiRequest.LOG_RESPONSE {
-                    print("RESPONSE\r\n*********")
-                    print("- result:  ", response.result)
-                    if let req = response.request {
-                        print("- request: ", req)
-                    }
-                    
-                    if let statusCode = response.response?.statusCode {
-                        print("- status code: ", statusCode)
-                    }
-                    
-                    if let value = response.value {
-                        print("- value:   ", value)
-                    }
-
-                    if let error = response.error {
-                        print("- error:   ", error.localizedDescription)
-                    }
-                    
-                    print("*********")
+                    print(response.toString(true))
                 }
                 
                 if let data = response.data {
