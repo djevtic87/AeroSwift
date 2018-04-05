@@ -19,11 +19,11 @@ public class ApiRequest: NSObject {
      Creates and executes an URLRequest based on specified ‘url’ and ‘bodyParams’.
      
      - Parameters:
-     - url:           The string URL.
-     - httpMethod:    The HTTP request method.
-     - bodyParams:    Data that will be sent as the message body of the request.
-     - headerFields:  A dictionary containing all the HTTP header fields of the receiver.
-     - completion:    Completion handler that will be called when the request is done.
+        - url:           The string URL.
+        - httpMethod:    The HTTP request method.
+        - bodyParams:    Data that will be sent as the message body of the request.
+        - headerFields:  A dictionary containing all the HTTP header fields of the receiver.
+        - completion:    Completion handler that will be called when the request is done.
      */
     
     public func request(_ url: String,
