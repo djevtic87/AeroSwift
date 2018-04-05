@@ -45,7 +45,7 @@ extension DataResponse {
             
         }
 
-        if let data = self.data, let value = String(data: data, encoding: .utf8), printData {
+        if let data = self.data, let value = String(data: data, encoding: .utf8), printData, data.count < 256 {
             retString += "- value:\n\(value)\n"
         }
 

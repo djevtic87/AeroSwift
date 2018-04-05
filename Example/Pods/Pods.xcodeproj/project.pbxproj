@@ -25,6 +25,7 @@
 		738FB0DFA28E468FE7778019309D50E1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */; };
 		77E3ED9920761F7B005D6644 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E3ED9820761F7B005D6644 /* URLRequestExtension.swift */; };
 		77E3ED9B20763C92005D6644 /* DataResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E3ED9A20763C92005D6644 /* DataResponseExtension.swift */; };
+		77E3ED9D2076473C005D6644 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E3ED9C2076473C005D6644 /* DataExtension.swift */; };
 		7E1B09AE6C88197523B377B09880301B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */; };
 		897A380DBF6CAEB679870BE37A91AEE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8425F802DF869B8844D9D072CFCE373 /* Foundation.framework */; };
 		8A845A92308245E3FA9819157DA8467F /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
@@ -110,6 +111,7 @@
 		7444036CF73B991F3131225FB4901268 /* AeroSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AeroSwift-umbrella.h"; sourceTree = "<group>"; };
 		77E3ED9820761F7B005D6644 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
 		77E3ED9A20763C92005D6644 /* DataResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseExtension.swift; sourceTree = "<group>"; };
+		77E3ED9C2076473C005D6644 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		784949B6D909743A65E9810DAA95293C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D2719C2EE828EFA0015447820D55666 /* Pods-AeroSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AeroSwift_Example.modulemap"; sourceTree = "<group>"; };
 		85F492399194429CF10A1F6D5AE07B8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 				7162E718AACB738221BED874E0907CA1 /* UIViewExtension.swift */,
 				77E3ED9820761F7B005D6644 /* URLRequestExtension.swift */,
 				77E3ED9A20763C92005D6644 /* DataResponseExtension.swift */,
+				77E3ED9C2076473C005D6644 /* DataExtension.swift */,
 			);
 			name = Extensions;
 			path = AeroSwift/Classes/Extensions;
@@ -572,6 +575,7 @@
 				77E3ED9920761F7B005D6644 /* URLRequestExtension.swift in Sources */,
 				E4DD016E7BC1649E7032368AF406487C /* AeroSwift-dummy.m in Sources */,
 				A8D6E2C20863CE233919CB3E10ECBE2F /* ApiRequest.swift in Sources */,
+				77E3ED9D2076473C005D6644 /* DataExtension.swift in Sources */,
 				45454862BC4394BCD65AB03A07BAFA30 /* DecoderExtension.swift in Sources */,
 				227FB8DC691CE4628AEAC0859238A711 /* DispatchQueueExtension.swift in Sources */,
 				E47BB68E563AEA41831C1E7FC834D1AE /* UIApplicationExtension.swift in Sources */,

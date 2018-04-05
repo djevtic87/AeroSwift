@@ -41,16 +41,14 @@ class Tests: XCTestCase {
         
         let headers = ["Content-Type" : "application/json"]
         
-        ApiRequest.sharedInstance.request(url, "GET", TestModel.self, nil, headers, { (test, status) in
-            XCTAssert(status == 200)
-            if let testModel = test {
+        ApiRequest.sharedInstance.request(url, "GET", nil, headers, {(data, status) in
+            if let data = data, let testModel = data.decode(TestModel.self), status == 200 {
                 XCTAssert(testModel.fullName == "Elon Musk")
                 XCTAssert(testModel.id == 123456)
                 XCTAssert(testModel.twitter == "https://twitter.com/elonmusk")
             } else {
                 XCTAssert(false)
             }
-
             e.fulfill()
         })
         waitForExpectations(timeout: 10.0, handler: nil)
